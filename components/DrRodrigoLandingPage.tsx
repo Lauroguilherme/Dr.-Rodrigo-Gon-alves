@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stethoscope, MapPin, Phone, MessageCircle, Wind, Activity, Clock, CheckCircle, Menu, X } from 'lucide-react';
+import { Stethoscope, MapPin, Phone, MessageCircle, Wind, Activity, Clock, CheckCircle, Menu, X, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 const DrRodrigoLandingPage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -326,7 +326,9 @@ const DrRodrigoLandingPage: React.FC = () => {
       {/* --- FOOTER --- */}
       <footer className="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 mt-auto">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
-          <div>
+          
+          {/* Coluna 1: Logo e Info */}
+          <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center justify-center md:justify-start gap-2 mb-2 text-white">
               <Stethoscope size={24} className="text-blue-500" />
               <h5 className="font-bold text-lg">Dr. Rodrigo Gonçalves</h5>
@@ -334,9 +336,26 @@ const DrRodrigoLandingPage: React.FC = () => {
             <p className="text-sm text-gray-500">Médico Pneumologista e Cirurgião Torácico</p>
             <p className="text-sm font-medium text-gray-500 mt-1">CRM-RJ 105635-2</p>
           </div>
+
+          {/* Coluna 2: Redes Sociais */}
+          <div className="flex flex-col items-center gap-3">
+              <span className="text-xs font-bold uppercase tracking-widest text-gray-600">Redes Sociais</span>
+              <div className="flex gap-4">
+                  <a href="#" className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#0077b5] transition-all duration-300 transform hover:scale-110">
+                      <Linkedin size={20} />
+                  </a>
+                  <a href="#" className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#E1306C] transition-all duration-300 transform hover:scale-110">
+                      <Instagram size={20} />
+                  </a>
+                  <a href="#" className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#1877F2] transition-all duration-300 transform hover:scale-110">
+                      <Facebook size={20} />
+                  </a>
+              </div>
+          </div>
           
+          {/* Coluna 3: Contato */}
           <div className="flex flex-col items-center md:items-end space-y-2">
-             <div className="flex items-center gap-3 bg-gray-800 px-4 py-2 rounded-lg">
+             <div className="flex items-center gap-3 bg-gray-800 px-4 py-2 rounded-lg border border-gray-700">
                 <Phone size={18} className="text-green-400" /> 
                 <span className="text-white font-medium tracking-wide">(21) 96699-9895</span>
              </div>
