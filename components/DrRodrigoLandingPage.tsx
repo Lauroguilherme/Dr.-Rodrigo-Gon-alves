@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stethoscope, MapPin, Phone, MessageCircle, Wind, Activity, Clock, CheckCircle, Menu, X, Linkedin, Instagram, Facebook } from 'lucide-react';
+import { Stethoscope, MapPin, Phone, MessageCircle, Wind, Activity, Clock, CheckCircle, Menu, X, Instagram, Facebook } from 'lucide-react';
 
 const DrRodrigoLandingPage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -135,7 +135,7 @@ const DrRodrigoLandingPage: React.FC = () => {
                   Updated image source to the URL provided by the user.
                */}
                <img 
-                 src="https://lauroguilherme.com.br/wp-content/uploads/2025/12/dr-rodrigo.jpg.jpeg" 
+                 src="https://respira-facil-drrodrigo.lovable.app/assets/dr-rodrigo-Dvj_yJKk.png" 
                  onError={handleImageError}
                  alt="Dr. Rodrigo Jorge Pereira Gonçalves" 
                  className="w-full h-auto object-cover min-h-[400px] transition-transform duration-700 group-hover:scale-105"
@@ -341,10 +341,12 @@ const DrRodrigoLandingPage: React.FC = () => {
           <div className="flex flex-col items-center gap-3">
               <span className="text-xs font-bold uppercase tracking-widest text-gray-600">Redes Sociais</span>
               <div className="flex gap-4">
-                  <a href="#" className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#0077b5] transition-all duration-300 transform hover:scale-110">
-                      <Linkedin size={20} />
-                  </a>
-                  <a href="#" className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#E1306C] transition-all duration-300 transform hover:scale-110">
+                  <a 
+                    href="https://www.instagram.com/drrodrigo_goncalves/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#E1306C] transition-all duration-300 transform hover:scale-110"
+                  >
                       <Instagram size={20} />
                   </a>
                   <a href="#" className="bg-gray-800 p-2.5 rounded-full text-gray-400 hover:text-white hover:bg-[#1877F2] transition-all duration-300 transform hover:scale-110">
